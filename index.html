@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <title>Encriptador de texto - Desafio 1</title>
+        <link rel ="stylesheet" href="reset.css">
+        <link rel ="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+               <!--<h1>Encriptador de texto</h1>-->
+               <img class="logo" src="img/Logo.png" alt="logo encriptador" >  
+        </header>
+
+        <main>
+            <section class = "principal">
+                <div class="contenedorcajatexto">
+                    <textarea placeholder="Ingrese el texto aquí" cols="15" rows="10" class="cajatexto" id = "textoEncriptar"></textarea>
+                </div>
+
+                <div class="alerta">
+                    <img src="img/bi_exclamation-circle-fill.png" alt="alerta">
+                    <p>Sólo letras minúsculas y sin acentos</p>
+                </div>
+
+                <div class="contenerdorbotones">
+                    <input onclick = "obtenerEncriptado();" type="button" class="btn-encriptar" value="Encriptar">
+                    <input onclick = "obtenerDesencriptado();" type="button" class="btn-desencriptar" value="Desencriptar" id="botonDesencriptar">
+                </div>
+            </section>
+
+            <section class="secundaria">
+                <div class="contenedorimg">
+                    <img src="img/Muñeco.png" alt="logomun" id="contenedormun">  
+                </div>
+
+                <div id="contenedor-parrafos" class="contenedorparrafos">
+                    <h3>Ningún mensaje encontrado</h3>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+
+                <div class="contenedorcopia">
+                    <input type="button" class="btn-copiar" value="Copiar" id="botonCopiar">
+                </div>
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado" id="resultado"></p>
+                </div>
+            </section>
+
+        </main>
+       
+        <script src="code.js"></script>
+
+            
+        </footer>
+    </body>
+
+
+
+</html>
